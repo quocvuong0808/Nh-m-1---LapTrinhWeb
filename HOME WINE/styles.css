@@ -1,0 +1,43 @@
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #1a1a1a;
+}
+
+.heading-font {
+  font-family: "Playfair Display", serif;
+}
+
+.brand-logo {
+  filter: sepia(1) hue-rotate(30deg) saturate(2) brightness(0.8);
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+
+.hero-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/placeholder.svg?height=600&width=1200");
+  background-size: cover;
+  background-position: center;
+}
+
+.section-divider {
+  width: 100px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #d4af37, transparent);
+  margin: 0 auto;
+  position: relative;
+}
+
+.section-divider::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 8px;
+  background: #d4af37;
+  border-radius: 50%;
+}
