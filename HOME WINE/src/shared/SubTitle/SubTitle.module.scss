@@ -1,0 +1,20 @@
+.sub-container {
+  width: 100%;
+  text-align: center;
+  h2 {
+    font-size: 30px;
+    font-family: var(--header-font);
+    line-height: 40.6px;
+    letter-spacing: 0.6px;
+    text-transform: capitalize;
+    color: var(--gray-color);
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .sub-container {
+    img {
+      width: 100%;
+    }
+  }
+}

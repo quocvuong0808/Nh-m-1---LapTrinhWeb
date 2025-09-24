@@ -1,0 +1,66 @@
+.choose-container {
+  width: 100%;
+  height: auto;
+  padding: 50px;
+  background: url("../../assets/images/blurbs-bg2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .choose-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 40px;
+    margin-top: 30px;
+    padding-bottom: 100px;
+    .choose-box {
+      color: var(--gray-color);
+      i {
+        display: block;
+        width: 100%;
+        font-size: 35px;
+      }
+      span {
+        display: block;
+        width: 100%;
+        text-align: left;
+        text-transform: capitalize;
+        font-size: 18px;
+        font-family: var(--header-font);
+        line-height: 25.9px;
+        letter-spacing: 0.4px;
+        color: var(--primary-color);
+        margin-bottom: 15px;
+        margin-top: 5px;
+      }
+      p {
+        line-height: 26.3px;
+        letter-spacing: -0.3px;
+        text-align: left;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  // .choose-container {
+  //   padding: 50px 20px 100px;
+  // }
+}
+
+@media screen and (max-width: 767px) {
+  .choose-container {
+    .choose-content {
+      grid-template-columns: repeat(1, 1fr);
+      .choose-box {
+        text-align: center;
+        span,p {
+          text-align: center;
+        }
+      }
+    }
+    
+  }
+}

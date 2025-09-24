@@ -1,0 +1,123 @@
+.cart-container {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  flex-direction: column;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  z-index: 10;
+  width: 400px;
+  background-color: #151515;
+  transition: var(--transition);
+  z-index: 1000;
+  &.close {
+    right: -100%;
+    transition: var(--transition);
+  }
+  .cart-header {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 14px -9px 5px 10px var(--gray-color);
+    color: var(--gray-color);
+    h3 {
+      font-family: var(--header-font);
+      text-transform: capitalize;
+      font-weight: 600;
+    }
+    .prev-icon {
+      cursor: pointer;
+    }
+  }
+  .cart-body {
+    width: 100%;
+    height: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    flex: 1;
+    &::-webkit-scrollbar{
+      display: none;
+    }
+  }
+  .cart-footer {
+    width: 100%;
+    border-top: 1px solid var(--gray-color);
+    color: var(--gray-color);
+    padding: 10px 20px;
+    .total-box {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      .total {
+        font-size: 13px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        p {
+          display: inline;
+          font-size: 15px;
+          color: var(--primary-color);
+        }
+      }
+      .delete {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 35px;
+        height: 35px;
+        background-color: var(--primary-color);
+        color: var(--text-color);
+        cursor: pointer;
+      }
+    }
+    .pay-box {
+      a {
+        display: block;
+        width: 100%;
+        padding: 5px 0;
+        text-align: center;
+        color: #333;
+        font-weight: 600;
+        &:hover {
+         color: #333;   
+        }
+      }
+      .view-cart {
+        background-color: #b1b2b4;
+        margin-bottom: 3px;
+      }
+      .checkout {
+        background-color: var(--primary-color);
+        color: var(--text-color);
+
+        &:hover {
+            color: var(--text-color);
+        }
+      }
+    }
+  }
+}
+
+
+
+
+// Phone
+
+@media screen and (max-width:767px) {
+  .cart-container {
+    width: 100%;
+    .cart-header {
+      padding: 20px 10px;
+    }
+    .cart-footer {
+      padding: 10px;
+    }
+  }
+}

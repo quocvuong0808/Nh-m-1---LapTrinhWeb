@@ -1,0 +1,174 @@
+[
+  {
+    "name": "Aberlour 12 Year Old Single Malt Scotch Whisky",
+    "price": "60",
+    "newPrice": "64",
+    "star": 4,
+    "isSale": true,
+    "featured": true,
+    "image": "/images/wines/wine-1/wine-1.webp",
+    "detailImage": [
+      "/images/wines/wine-1/wine-1.1.webp",
+      "/images/wines/wine-1/wine-1.2.png",
+      "/images/wines/wine-1/wine-1.3.webp"
+    ],
+    "size": 25,
+    "age": 10,
+    "topRated": true
+  },
+  {
+    "name": "Bruichladdich The Classic Laddie Scottish Barley Whisky",
+    "price": "59",
+    "star": 3,
+    "isSale": false,
+    "featured": true,
+    "image": "/images/wines/wine-2/wine-2.png",
+    "detailImage": [
+      "/images/wines/wine-2/wine-2.1.webp",
+      "/images/wines/wine-2/wine-2.2.webp"
+    ],
+    "size": 50,
+    "age": 12,
+    "topRated": true
+  },
+  {
+    "name": "Dalmore Malt Scotch Whisky 15 Year Old Glass Gift Pack",
+    "price": "80",
+    "star": 5,
+    "isSale": false,
+    "featured": true,
+    "image": "/images/wines/wine-3/wine-3.webp",
+    "detailImage": [
+      "/images/wines/wine-3/wine-3.1.webp",
+      "/images/wines/wine-3/wine-3.2.webp"
+    ],
+    "size": 70,
+    "age": 15,
+    "topRated": true
+  },
+  {
+    "name": "GlenDronach 18 Year Old Allardice Highland Single Malt Scotch Whisky",
+    "price": "120",
+    "star": 4,
+    "isSale": false,
+    "featured": true,
+    "image": "/images/wines/wine-4/wine-4.webp",
+    "detailImage": [
+      "/images/wines/wine-4/wine-4.1.webp",
+      "/images/wines/wine-4/wine-4.2.png"
+    ],
+    "size": 50,
+    "age": 18,
+    "topRated": true
+  },
+  {
+    "name": "GlenDronach 18 Year Old Allardice Highland Single Malt Scotch Whisky",
+    "price": "70",
+    "star": 4,
+    "isSale": false,
+    "image": "/images/wines/wine-5/wine-5.webp",
+    "detailImage": [
+      "/images/wines/wine-5/wine-5.1.webp",
+      "/images/wines/wine-5/wine-5.2.png"
+    ],
+    "size": 25,
+    "age": 15
+  },
+  {
+    "name": "Highland Park Dark Origins Scotch Whisky",
+    "price": "60",
+    "star": 5,
+    "isSale": false,
+    "image": "/images/wines/wine-6/wine-6.webp",
+    "detailImage": [
+      "/images/wines/wine-6/wine-6.1.webp",
+      "/images/wines/wine-6/wine-6.2.png"
+    ],
+    "size": 50,
+    "age": 18
+  },
+  {
+    "name": "Jack Daniel’S Frank Sinatra Edition Whisky",
+    "price": "75",
+    "star": 3,
+    "isSale": false,
+    "image": "/images/wines/wine-7/wine-7.webp",
+    "detailImage": [
+      "/images/wines/wine-7/wine-7.1.webp",
+      "/images/wines/wine-7/wine-7.2.webp"
+    ],
+    "size": 70,
+    "age": 18
+  },
+  {
+    "name": "Johnnie Walker Blue Label Blended Scotch Whisky",
+    "price": "40",
+    "newPrice": "46",
+    "star": 4,
+    "isSale": true,
+    "image": "/images/wines/wine-8/wine-8.webp",
+    "detailImage": ["/images/wines/wine-8/wine-8.1.webp"],
+    "size": 25,
+    "age": 15
+  },
+  {
+    "name": "Johnnie Walker Black Label Blended Scotch Whisky",
+    "price": "49",
+    "star": 3,
+    "image": "/images/wines/wine-9/wine-9.webp",
+    "detailImage": [
+      "/images/wines/wine-9/wine-9.1.png",
+      "/images/wines/wine-9/wine-9.2.png"
+    ],
+    "size": 50,
+    "age": 10
+  },
+  {
+    "name": "Jura Origin 10 Year Old Whisky",
+    "price": "68",
+    "newPrice": "65",
+    "star": 5,
+    "isSale": true,
+    "image": "/images/wines/wine-10/wine-10.webp",
+    "detailImage": [
+      "/images/wines/wine-10/wine-10.1.png",
+      "/images/wines/wine-10/wine-10.2.png"
+    ],
+    "size": 70,
+    "age": 18
+  },
+  {
+    "name": "Laphroaig Select Islay Single Malt Scotch Whisky",
+    "price": "56",
+    "newPrice": "53",
+    "star": 5,
+    "isSale": true,
+    "image": "/images/wines/wine-11/wine-11.webp",
+    "detailImage": [
+      "/images/wines/wine-11/wine-11.1.png",
+      "/images/wines/wine-11/wine-11.2.png"
+    ],
+    "size": 25,
+    "age": 12
+  },
+  {
+    "name": "Talisker 10 Years Old Single Malt Scotch Whisky",
+    "price": "86",
+    "newPrice": "80",
+    "star": 4,
+    "isSale": true,
+    "image": "/images/wines/wine-12/wine-12.webp",
+    "detailImage": ["/images/wines/wine-12/wine-12.1.png"],
+    "size": 50,
+    "age": 18
+  },
+  {
+    "name": "Woodford Reserve Bourbon Whiskey",
+    "price": "30",
+    "star": 3,
+    "image": "/images/wines/wine-13/wine-13.webp",
+    "detailImage": ["/images/wines/wine-13/wine-13.1.png"],
+    "size": 70,
+    "age": 15
+  }
+]

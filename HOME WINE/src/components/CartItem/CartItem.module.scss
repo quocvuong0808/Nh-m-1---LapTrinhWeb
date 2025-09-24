@@ -1,0 +1,85 @@
+.cart {
+  display: flex;
+  gap: 15px;
+  padding: 10px 20px;
+  border-bottom: 1px solid var(--gray-color);
+  .cart-image {
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+  }
+  .cart-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    .cart-title {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      a {
+        font-size: 13px;
+        font-family: var(--header-font);
+      }
+      .delete-icon {
+        font-size: 22px;
+        color: var(--gray-color);
+        font-weight: 600;
+        cursor: pointer;
+        &:hover {
+          color: var(--primary-color);
+        }
+      }
+    }
+    .price-container {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .amount {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 12px;
+        width: 70px;
+        height: 25px;
+        border: 1px solid #848282;
+        color: var(--gray-color);
+        .number {
+          font-weight: 700;
+        }
+        .minus,
+        .plus {
+          display: flex;
+          align-items: center;
+          justify-content: center; 
+          width: 100%;
+          height: 100%;
+          cursor: pointer;
+        }
+      }
+      .item-price {
+        .price {
+            color: #4e4c4c;
+            font-weight: 600;
+        }
+      }
+      .total-price {
+        .price {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width:767px) {
+  .cart {
+    padding: 10px;
+  }
+
+
+}

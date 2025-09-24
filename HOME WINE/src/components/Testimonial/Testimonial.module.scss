@@ -1,0 +1,82 @@
+.testimonial-container {
+  width: 100%;
+  padding: 50px;
+  background: url("../../assets/images/header-bg.jpg");
+
+  .testimonial-list {
+    margin-top: 50px;
+    .testimonial-box {
+      width: 100%;
+      pointer-events: none;
+      .testimonial-desc {
+        position: relative;
+        width: 100%;
+        padding: 53px 30px 70px 30px;
+        margin-bottom: 30px;
+        background-color: var(--bg-color);
+        letter-spacing: -0.3px;
+        // background-image: url("../../assets/images/quotes.webp");
+        // background-repeat: no-repeat;
+        P {
+          font-size: 30px;
+          text-align: center;
+          color: #fff;
+        }
+        &::before {
+          position: absolute;
+          content: "";
+          width: 15px;
+          height: 15px;
+          background-color: var(--bg-color);
+          bottom: -7px;
+          transform: rotate(45deg);
+          z-index: 5;
+        }
+      }
+      .testimonial-info {
+        display: flex;
+        align-items: center;
+        //   justify-content: center;
+        gap: 20px;
+        .avatar {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+          }
+        }
+        .info {
+          span {
+            display: block;
+          }
+          .name {
+            font-size: 18px;
+            font-family: var(--header-font);
+            line-height: 27px;
+            text-transform: capitalize;
+            color: #cecece;
+          }
+          .job {
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: -0.3px;
+            color: var(--primary-color);
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+@media screen and (max-width:767px) {
+.testimonial-container {
+  padding: 50px 20px;
+}
+
+}

@@ -1,0 +1,283 @@
+.about-section {
+  .about-us {
+    width: 100%;
+    padding: 50px;
+    background: url("../../assets/images/header-bg.jpg");
+    p {
+      letter-spacing: -0.3px;
+    }
+    .paragraph {
+      margin: 40px 0 30px;
+    }
+  }
+  .count-up {
+    width: 100%;
+    padding: 50px;
+    background-color: #151515;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    .group {
+      color: var(--gray-color);
+      text-align: center;
+      span {
+        font-family: var(--header-font);
+        font-size: 46px;
+        font-weight: 700;
+        letter-spacing: -0.3px;
+      }
+      p {
+        margin-top: 10px;
+        font-family: var(--header-font);
+        font-size: 14px;
+      }
+    }
+  }
+  .about-banner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 30px;
+    width: 100%;
+    padding: 60px 50px;
+    background: url("../../assets/images/about-banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .banner {
+      color: var(--gray-color);
+      text-align: center;
+      i {
+        display: block;
+        width: 100%;
+        font-size: 60px;
+        color: var(--primary-color);
+        transition: var(--transition);
+      }
+      i.delivery:hover {
+        animation: delivery 1s ease forwards;
+      }
+      i.support:hover {
+        animation: support 1s ease forwards;
+      }
+      i.payment:hover {
+        animation: payment 1s ease forwards infinite;
+      }
+      span {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 20px;
+        font-weight: 600;
+        font-family: var(--header-font);
+        text-transform: capitalize;
+        left: 1px;
+        line-height: 26.9px;
+      }
+    }
+  }
+  .skills {
+    width: 100%;
+    padding: 50px;
+    background: url("../../assets/images/background.jpg");
+    p {
+      margin-bottom: 20px;
+    }
+    .skills-box {
+      margin-bottom: 20px;
+      span {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 16px;
+        font-family: var(--header-font);
+        color: #777;
+        text-transform: capitalize;
+        line-height: 23px;
+        letter-spacing: -0.3px;
+      }
+      .line {
+        position: relative;
+        width: 100%;
+        height: 15px;
+        background-color: var(--white-color);
+        border-radius: 3px;
+        .value {
+          position: absolute;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          left: 0;
+          top: 0;
+          width: 0;
+          height: 100%;
+          padding-right: 10px;
+          background-color: var(--primary-color);
+          color: var(--white-color);
+          font-size: 12px;
+          font-family: var(--header-font);
+        }
+        .first {
+          width: 90%;
+        }
+        .second {
+          width: 80%;
+        }
+        .third {
+          width: 70%;
+        }
+      }
+    }
+  }
+  .motto-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 0 50px;
+    background-image: url("../../assets/images/wine-images/wine-2-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+    .motto {
+      padding: 150px 0;
+      width: 50%;
+      text-align: center;
+      p {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+@keyframes delivery {
+  10% {
+    transform: translateX(10px);
+  }
+  20% {
+    transform: translateX(0);
+  }
+  30% {
+    transform: translateX(-8px);
+  }
+  40% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  60% {
+    transform: translateX(0);
+  }
+  70% {
+    transform: translate(-3px);
+  }
+  80% {
+    transform: translateX(0);
+  }
+  90% {
+    transform: translateX(2px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes support {
+  10% {
+    transform: translateY(10px);
+  }
+  20% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-8px);
+  }
+  40% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  60% {
+    transform: translateY(0);
+  }
+  70% {
+    transform: translateY(-3px);
+  }
+  80% {
+    transform: translateY(0);
+  }
+  90% {
+    transform: translateY(2px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes payment {
+  10% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .about-section {
+    .about-us {
+      padding: 50px 20px;
+    }
+    .count-up {
+      padding: 50px 20px;
+    }
+    .about-banner {
+      padding: 60px 20px;
+    }
+    .skills {
+      padding: 50px 20px;
+    }
+    .motto-container {
+      justify-content: center;
+      padding: 0 20px;
+      .motto {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about-section {
+    .about-us {
+      padding: 50px 20px;
+    }
+    .count-up {
+      justify-content: center;
+      flex-direction: column;
+      padding: 50px 20px;
+    }
+    .about-banner {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: auto;
+      padding: 60px 20px;
+    }
+    .skills {
+      padding: 50px 20px;
+      p {
+        margin-top: 30px;
+      }
+    }
+    .motto-container {
+      justify-content: center;
+      padding: 0 20px;
+      background-position: center;
+      .motto {
+        width: 100%;
+      }
+    }
+  }
+}

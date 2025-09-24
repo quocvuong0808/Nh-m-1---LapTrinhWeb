@@ -1,0 +1,13 @@
+.review-box {
+    margin-bottom: 40px;
+    display: flex;
+    gap: 20px;
+    .user-image {
+        width: 60px;
+        height: 60px;
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}

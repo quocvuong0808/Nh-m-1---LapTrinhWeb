@@ -1,0 +1,203 @@
+// FONT
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..900&display=swap");
+
+// SET UP
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-weight: 400;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--primary-font);
+  cursor: default;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: #303030;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #616161;
+  height: 50px;
+}
+// VARIABLES
+:root {
+  --text-size: 16px;
+
+  --primary-color: #caa462;
+  --white-color: #fff;
+  --text-color: #cecece;
+  --gray-color: #848484;
+  --dark-color: #000;
+  --bg-color: #252525;
+
+  --primary-font: "Titillium Web", sans-serif;
+  --header-font: "Playfair Display", serif;
+
+  --transition: 0.5s ease;
+}
+.App {
+  padding: env(safe-area-inset-top) env(safe-area-inset-right)
+    env(safe-area-inset-bottom) env(safe-area-inset-left);
+  padding: constant(safe-area-inset-top) constant(safe-area-inset-right)
+    constant(safe-area-inset-bottom) constant(safe-area-inset-left);
+}
+section {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 200px;
+}
+textarea {
+  resize: vertical;
+}
+p {
+  font-family: var(--primary-font);
+  font-size: 16px;
+  color: var(--gray-color);
+  letter-spacing: -0.3px;
+}
+table,
+th,
+td {
+  border-collapse: collapse;
+  border: 1px solid var(--white-color);
+  color: var(--text-color);
+}
+table {
+  tbody {
+    tr {
+      max-width: 180px;
+      th {
+        padding: 10px 0;
+        text-transform: capitalize;
+        width: 180px;
+      }
+      td {
+        padding: 10px;
+        text-align: center;
+      }
+    }
+  }
+}
+a {
+  color: var(--gray-color);
+  transition: var(--transition);
+  text-align: center;
+  &:hover {
+    color: var(--primary-color);
+  }
+}
+a.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 14px;
+  font-family: var(--header-font);
+  letter-spacing: 0.6px;
+  line-height: 14px;
+  border: 3px solid var(--primary-color);
+  color: var(--primary-color);
+  background-color: var(--bg-color);
+  border-radius: 3px;
+  text-transform: uppercase;
+  transition: var(--transition);
+  &:hover {
+    border: 3px solid var(--bg-color);
+  }
+}
+a.active {
+  color: var(--primary-color);
+}
+
+.star {
+  color: var(--primary-color);
+  font-size: 12px;
+}
+
+.thumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.track-1 {
+  background-color: var(--primary-color);
+  height: 100%;
+}
+.react-transform-wrapper {
+  width: 100% !important;
+  height: 100% !important;
+  background-color: #282828;
+}
+.react-transform-component {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100% !important;
+  height: 100% !important;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.transition {
+  transform: rotateX(360deg);
+  transition: 0.5s ease;
+}
+
+.swiper-pagination {
+  width: calc(100% - 30px) !important;
+  bottom: 0 !important;
+  position: absolute;
+  bottom: -120px !important;
+  left: 0px !important;
+  .swiper-pagination-bullet {
+    position: relative;
+    width: 102px;
+    height: 102px;
+    background-color: transparent;
+    margin: 0 7px !important;
+    border-radius: 0 !important;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 2px solid var(--gray-color);
+    }
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 767px) {
+  .swiper-pagination {
+    left: 15px !important;
+    .swiper-pagination-bullet {
+      width: 80px;
+      height: 100px;
+    }
+  }
+}
