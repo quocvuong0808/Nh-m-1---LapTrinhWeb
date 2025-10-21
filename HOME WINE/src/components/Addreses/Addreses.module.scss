@@ -1,0 +1,133 @@
+.addresses {
+  .account-title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #393939;
+    color: var(--text-color);
+    h2 {
+      font-size: 30px;
+      font-family: var(--header-font);
+      line-height: 40.3px;
+      letter-spacing: 0.6px;
+      text-transform: capitalize;
+    }
+    span {
+      text-transform: capitalize;
+      background-color: var(--primary-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      padding: 8px 15px;
+      font-size: 15px;
+      color: var(--white-color);
+      cursor: pointer;
+      gap: 5px;
+    }
+  }
+  h1 {
+    color: var(--text-color);
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .address-list {
+    width: 100%;
+    .address-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 30px 0;
+      border-bottom: 1px solid #393939;
+      .address-info {
+        .name-phone {
+          display: flex;
+          align-items: flex-end;
+          margin-bottom: 5px;
+          h2 {
+            color: var(--text-color);
+            font-size: 18px;
+            display: block;
+            padding-right: 10px;
+            border-right: 1px solid #393939;
+          }
+          p {
+            display: block;
+            padding-left: 10px;
+            margin: 0;
+          }
+        }
+        p {
+          font-size: 15px;
+          margin-bottom: 5px;
+        }
+        span {
+          display: inline-block;
+          font-size: 15px;
+          color: var(--primary-color);
+          text-transform: capitalize;
+          border: 1px solid var(--primary-color);
+          padding: 5px;
+          margin-top: 5px;
+        }
+      }
+      .address-btn {
+        text-align: right;
+        text-transform: capitalize;
+        div {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          gap: 5px;
+          p {
+            color: var(--primary-color);
+            font-size: 16px;
+            padding: 5px;
+            cursor: pointer;
+          }
+        }
+        span {
+          display: inline-block;
+          padding: 5px 10px;
+          margin-top: 10px;
+          color: var(--text-color);
+          font-size: 14px;
+          border: 1px solid #393939;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+@media screen and (max-width: 440px) {
+  .addresses {
+    .account-title {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 20px;
+    }
+    h1 {
+      margin-bottom: 0;
+    }
+    .address-list {
+      .address-box {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
+        .address-btn {
+          div {
+            justify-content: flex-start;
+          }
+        }
+      }
+    }
+  }
+
+}
