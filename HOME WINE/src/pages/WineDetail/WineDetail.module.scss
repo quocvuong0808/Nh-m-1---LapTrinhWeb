@@ -1,0 +1,307 @@
+.wine-section {
+  .wine-detail {
+    width: 100%;
+    padding: 100px 50px;
+    background: url("../../assets/images/header-bg.jpg");
+    .wine-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      .wine-image {
+        position: relative;
+        max-width: 50%;
+        height: 600px;
+        width: 100%;
+        padding-right: 30px;
+        img {
+          display: block;
+          max-width: 100%;
+          width: 100%;
+          object-fit: cover;
+          padding-bottom: 30px;
+        }
+        .sub-image {
+          margin-top: 15px;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          &.disappear {
+            display: none;
+          }
+          li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            img {
+              display: block;
+              width: 100px;
+              height: 100px;
+              object-fit: cover;
+              padding: 10px 0;
+            }
+          }
+        }
+      }
+      .wine-info {
+        width: 50%;
+        .sale-tag {
+          font-family: var(--header-font);
+          font-size: 12px;
+          color: var(--white-color);
+          background-color: #36373e;
+          padding: 6px 7px;
+          text-transform: uppercase;
+        }
+        h1 {
+          margin: 20px 0;
+          font-family: var(--header-font);
+          font-size: 20px;
+          line-height: 30px;
+          letter-spacing: 0.4px;
+          color: #cecece;
+        }
+        .price {
+          font-family: var(--header-font);
+          color: var(--primary-color);
+          font-size: 20px;
+          .price {
+            position: relative;
+            margin-right: 10px;
+
+            &::before {
+              content: "";
+              position: absolute;
+              width: 100%;
+              background-color: var(--primary-color);
+              height: 2px;
+              top: 60%;
+              left: 0;
+            }
+          }
+        }
+        .rate-box {
+          display: flex;
+          margin: 20px 0 30px;
+          gap: 10px;
+          p {
+            transition: var(--transition);
+            cursor: pointer;
+            &:hover {
+              color: var(--primary-color);
+            }
+          }
+        }
+        .option-box {
+          width: 100%;
+          margin: 40px 0;
+          p {
+            margin-bottom: 8px;
+          }
+          select {
+            font-size: 16px;
+            color: #969696;
+            background-color: #151515;
+            box-shadow: 0px 0px 0px 1px #393939 inset;
+            border-radius: 1px;
+            line-height: 24px;
+            width: 250px;
+            padding: 10px 15px;
+            outline: none;
+            border: none;
+          }
+        }
+        .add-box {
+          display: flex;
+          align-items: center;
+          color: var(--gray-color);
+          input {
+            max-width: 20%;
+            font-size: 16px;
+            padding: 16px 0;
+            background-color: #151515;
+            outline: none;
+            border: none;
+            border-radius: 1px;
+            color: var(--gray-color);
+            box-shadow: 0px 0px 0px 1px #393939 inset;
+            text-align: center;
+          }
+          button {
+            max-width: 50%;
+            width: 100%;
+            padding: 16px 0;
+            font-size: 14px;
+            font-weight: 600;
+            box-shadow: 0px 0px 0px 3px var(--primary-color) inset;
+            font-family: var(--header-font);
+            color: var(--primary-color);
+            border-radius: 1px;
+            background-color: transparent;
+            text-transform: uppercase;
+            outline: none;
+            border: none;
+            transition: var(--transition);
+            cursor: pointer;
+            &:hover {
+              background-color: var(--bg-color);
+              box-shadow: 0px 0px 0px 3px var(--bg-color) inset;
+            }
+            i {
+              margin-right: 8px;
+            }
+          }
+        }
+        .buttons {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          width: 100%;
+          padding: 10px 0;
+          margin-top: 70px;
+          color: var(--gray-color);
+          border-top: 1px solid #393939;
+          border-bottom: 1px solid #393939;
+          .button {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 14px;
+            line-height: 9.6px;
+            letter-spacing: 0.6px;
+            text-transform: uppercase;
+            color: var(--white-color);
+            cursor: pointer;
+            transition: var(--transition);
+            &:hover {
+              color: var(--primary-color);
+            }
+          }
+        }
+        .icons {
+          width: 100%;
+          margin-top: 20px;
+          a {
+            margin-right: 15px;
+          }
+        }
+      }
+    }
+    .wine-options {
+      width: 100%;
+      margin-top: 150px;
+      color: var(--gray-color);
+      border-bottom: 1px solid #393939;
+      padding-bottom: 7px;
+      span {
+        font-size: 12px;
+        line-height: 19.7px;
+        letter-spacing: 1px;
+        border: 1px solid #393939;
+        padding: 8px 25px;
+        text-transform: capitalize;
+        margin-right: 5px;
+        cursor: pointer;
+        &.active {
+          color: var(--primary-color);
+        }
+      }
+    }
+    .wine-content {
+      color: var(--gray-color);
+      border-bottom: 1px solid #393939;
+    }
+    .related-wine {
+      padding-top: 30px;
+      h2 {
+        font-family: var(--header-font);
+        color: var(--gray-color);
+        text-transform: capitalize;
+        margin-bottom: 20px;
+      }
+      .wine-list {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .wine-section {
+    .wine-detail {
+      .wine-container {
+        flex-direction: column;
+        gap: 150px;
+        .wine-image {
+          height: 680px;
+          max-width: 100%;
+
+          .sub-image {
+            margin-top: 20px;
+          }
+        }
+        .wine-info {
+          width: 100%;
+        }
+      }
+      .wine-options {
+        margin-top: 50px;
+      }
+      .related-wine {
+        h2 {
+          margin-bottom: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .wine-section {
+    .wine-detail {
+      padding: 100px 20px;
+      .wine-container {
+        flex-direction: column;
+        gap: 150px;
+        .wine-image {
+          height: 500px;
+          max-width: 100%;
+          padding-right: 0;
+          .sub-image {
+            li {
+              img {
+                width: 80px;
+              }
+            }
+          }
+        }
+        .wine-info {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .wine-section {
+    .wine-container {
+      .wine-info {
+        .buttons {
+          flex-wrap: wrap;
+        }
+      }
+    }
+    .wine-detail {
+      .wine-options {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        row-gap: 10px;
+      }
+    }
+  }
+}
